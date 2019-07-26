@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<div *ngFor="let brand of brandList; index as i">
+  <brand [brandName] = "brand.name" [description]= "brand.description" [url]= "brand.url" [index]= "i"
+  
+  (messageEvent)= "removeBrandFromList($event)"></brand>
+  <!-- {{brand.name}} -->
+</div>
+<p>
+  Start editing to see some magic happen :) {{message}}
+</p>
